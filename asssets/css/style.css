@@ -1,7 +1,6 @@
 .container {
-  max-width: 992px;
-  min-width: 567px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .homename {
@@ -14,11 +13,17 @@
 .home {
   border-bottom: 3px solid rgb(228, 225, 225);
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .maintext > a {
   color: gray;
   text-decoration: none;
+}
+
+.maintext {
+  flex-wrap: wrap;
 }
 
 .image {
@@ -246,6 +251,11 @@ footer {
     justify-content: end;
     font-size: 16px;
   }
+
+  .home {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -269,5 +279,10 @@ footer {
     height: 30vh;
     justify-content: end;
     font-size: 20px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: row;
   }
 }
